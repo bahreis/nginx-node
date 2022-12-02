@@ -1,0 +1,1000 @@
+  682  ls
+  683  ll
+  684  cd nginx/
+  685  ls
+  686  clear
+  687  docker build -t darkflame91/nginx:prod -f Dockerfile.prod
+  688  cd ..
+  689  clear
+  690  ls
+  691  mkdir node
+  692  ls
+  693  cd node/
+  694  lcear
+  695  clear
+  696  docker run --rm -it -v $(pwd)/:/usr/scr/app -p 3030:3030 node:15 bash
+  697  ls
+  698  clear
+  699  docker run --rm -it -v $(pwd)/:/usr/scr/app -p 3000:3000 node:15 bash
+  700  docker run --rm -it -v $(pwd)/:/usr/scr/app -p 5000:3000 node:15 bash
+  701  clear
+  702  docker images
+  703  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  704  docker container run -p 5002:5000 --name customized -e "name=aagam" -d nodeapp:001
+  705  clear
+  706  docke rps
+  707  docker ps
+  708  docker ps -a
+  709  clea
+  710  docker ps -a
+  711  docker logs 92f6c9a0f5b4
+  712  clear
+  713  docker ps -a
+  714  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  715  docker ps -a
+  716  docker start 92f6c9a0f5b4
+  717  docker logs 92f6c9a0f5b4
+  718  clear
+  719  docker rm $(docker ps -a -d) -f
+  720  docker rm $(docker ps -a -q) -f
+  721  clear
+  722  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  723  docker ps
+  724  docker ps -a
+  725  docker logs c9fda6e7efee
+  726  docker rm $(docker ps -a -q) -f
+  727  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  728  clear
+  729  docker ps
+  730  docker ps -a
+  731  docker logs 32f1654633c5
+  732  docker rm $(docker ps -a -q) -f
+  733  clear
+  734  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  735  docker ps -a
+  736  docker logs a69c9436e026
+  737  docker system prune -a
+  738  docker ps -a
+  739  clear
+  740  docker build -t nodeapp:001 .
+  741  docker container run -p 5001:5000 --name helloworld -d nodeapp:001
+  742  docker ps
+  743  docker container run -p 5002:5000 --name customized -e "name=aagam" -d nodeapp:001
+  744  docker ps
+  745  clear
+  746  cd ..
+  747  cd nginx/
+  748  clear
+  749  ls
+  750  docker build -t nginxbalancer:001 .
+  751  clear
+  752  docker container run -p 5000:80 -d nginxbalancer:001
+  753  docker ps
+  754  docker logs f78c9a3954cc
+  755  clear
+  756  docker container run -p 5000:80 -d nginxbalancer:001
+  757  docker ps
+  758  docker stop f78c9a3954cc
+  759  clear
+  760  docker container run -p 5000:80 -d nginxbalancer:001
+  761  docker ps
+  762  docker stop da913ec4f02e
+  763  clear
+  764  docker build -t nginxbalancer:001 .
+  765  docker container run -p 5000:80 -d nginxbalancer:001
+  766  docker ps
+  767  docker stop bcee8ad4e104
+  768  clear
+  769  docker build -t nginxbalancer:001 .
+  770  docker container run -p 5000:80 -d nginxbalancer:001
+  771  clear
+  772  docker ps
+  773  docker logs7da0613dadfd
+  774  docker logs 7da0613dadfd
+  775  clear
+  776  docker ps
+  777  docker stop 7da0613dadfd
+  778  docker build -t darkflame91/nginx:001 .
+  779  docker ps
+  780  docker container run -p 5000:80 -d darkflame91/nginx:001
+  781  clear
+  782  docker ps
+  783  docker logs c5e36d54ad86
+  784  clear
+  785  docker build -t darkflame91/nginx:001 .
+  786  docker ps
+  787  docker container run -p 5000:80 -d darkflame91/nginx:001
+  788  docker ps
+  789  docker logs 03a758d2419c
+  790  docker stop 03a758d2419c
+  791  clear
+  792  docker build -t darkflame91/nginx:001 .
+  793  docker container run -p 5000:80 -d darkflame91/nginx:001
+  794  ls
+  795  docker ps
+  796  docker container run -p 5000:80 -d darkflame91/nginx:001
+  797  clear
+  798  docker ps
+  799  docker logs ac945f1ec40d
+  800  docker stop ac945f1ec40d
+  801  docker build -t darkflame91/nginx:001 .
+  802  docker run --rm -it -v $(pwd)/:/usr/scr/app -p 5000:3000 node:15 bash
+  803  clear
+  804  docker container run -p 5000:80 -d darkflame91/nginx:001
+  805  docker ps
+  806  docker logs d8950abd63f9
+  807  clear
+  808  docker ps
+  809  docker stop d8950abd63f9
+  810  docker logs d8950abd63f9
+  811  clear
+  812  docker build -t darkflame91/nginx:001 .
+  813  docker run -p 5000:80 -d darkflame91/nginx:001
+  814  docker ps
+  815  docker logs 89e64d9313e9
+  816  clear
+  817  docker logs 89e64d9313e9
+  818  clear
+  819  docker ps 
+  820  docker stop 89e64d9313e9
+  821  docker build -t darkflame91/nginx:001 .
+  822  clear
+  823  docker container run -p 5000:80 -d darkflame91/nginx:001
+  824  docker ps
+  825  docker logs 1149d38f392d
+  826  clea
+  827  clear
+  828  docker network create nginx-node
+  829  docker network list
+  830  clear
+  831  docker ps 
+  832  docker rm $(docker ps -a -q) -f
+  833  clear
+  834  docker build -t nodeapp:001 .
+  835  docker ps
+  836  docker rm $(docker ps -a -q) -f
+  837  clear
+  838  cd ..
+  839  cd node/
+  840  ls
+  841  clear
+  842  docker run -d --network nginx-node --name node darkflame91/node:prod
+  843  docker run -d --network nginx-node --name node darkflame91/node
+  844  docker build -t darkflame01/nodeapp .
+  845  clear
+  846  docker run -d --network nginx-node --name node darkflame91/node
+  847  docker ps
+  848  docker imags
+  849  docker images
+  850  clear
+  851  docker system prune -a
+  852  clear
+  853  docker build -t darkflame91/node .
+  854  docker run -d --network nginx-node --name node darkflame91/node
+  855  docker network create nginx-node
+  856  docker run -d --network nginx-node --name node darkflame91/node
+  857  clear
+  858  docker system prune -a
+  859  clear
+  860  docker network create nginx-node
+  861  docker run -d --network nginx-node --name node darkflame91/node
+  862  docker build -t darkflame91/node .
+  863  docker run -d --network nginx-node --name node darkflame91/node
+  864  clear
+  865  docker ps
+  866  docker stop 86fe7666fce8
+  867  clear
+  868  docker run -d --network nginx-node --name node darkflame91/node
+  869  docker build -t darkflame91/node .
+  870  docker run -d --network nginx-node --name node darkflame91/node
+  871  docker rm $(docker ps -a -q) -f
+  872  clear
+  873  docker run -d --network nginx-node --name node darkflame91/node
+  874  clear
+  875  docker ps
+  876  docker stop fd0e20885a11
+  877  clear
+  878  docker container run -p 5001:5000 --name helloworld -d darkflame91/node
+  879  docker ps
+  880  docker build -t darkflame91/nginx .
+  881  cd .. 
+  882  cd nginx/
+  883  docker build -t darkflame91/nginx .
+  884  docker build -t darkflame91/nginx .clear
+  885  clear
+  886* 
+  887  clear
+  888  docker ps
+  889  docker logs22262294f0cc
+  890  docker logs 22262294f0cc
+  891  docker rm -f 22262294f0cc
+  892  clear
+  893  docker build -t darkflame91/nginx .
+  894  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx --build
+  895  clear
+  896  docker ps
+  897  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx --build
+  898  docker ps
+  899  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  900  docker ps
+  901  clear
+  902  docker ps
+  903  docker logs 4aaa522d9080
+  904  docker rm -f 4aaa522d9080
+  905  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx --build
+  906  docker ps
+  907  docker ps -a
+  908  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  909  docker ps
+  910  clear
+  911  docker ps 
+  912  docker ps -a
+  913  docker logs 5996d43926d2
+  914  docker ps 
+  915  docker ps -a
+  916  docker rm 5996d43926d2
+  917  docker rm 3d00e3f45192
+  918  clear
+  919  docker ps -a
+  920  docker rm ead233a84f35
+  921  docker rm e5c03bf4dc71
+  922  clear
+  923  docker build -t darkflame91/nginx .
+  924  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  925  docker ps
+  926  docker logs bfe69cac82cd
+  927  docker ps
+  928  clear
+  929  docker rm  bfe69cac82cd
+  930  docker build -t darkflame91/nginx .
+  931  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  932  docker ps
+  933  docker logs 7f084ce3ffea
+  934  clear
+  935  docker logs 7f084ce3ffea
+  936  clear
+  937  docker logs 7f084ce3ffea
+  938  clear
+  939  docker rm  7f084ce3ffea
+  940  docker rm -f 7f084ce3ffea
+  941  docker build -t darkflame91/nginx .
+  942  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  943  docker ps
+  944  docker ps06af8f8e5693
+  945  docker logs 06af8f8e5693
+  946  clear
+  947  docker logs 06af8f8e5693
+  948  docker ps
+  949  docker rm 0f 06af8f8e5693
+  950  docker rm -f 06af8f8e5693
+  951  docker ps -a
+  952  docker ps
+  953  docker rm -f fd0e20885a11
+  954  clear
+  955  docker build -t darkflame91/nginx .
+  956  docker run -p 5000:80 --network nginx-node  -d darkflame91/nginx 
+  957  docker ps
+  958  docker logs 04d0bb1b5244
+  959  clear
+  960  docker logs 04d0bb1b5244
+  961  docker ps
+  962  clear
+  963  cd ..
+  964  clear
+  965  ls
+  966  docker-compose -f docker-compose.yml up --build -d
+  967  clear
+  968  docker-compose -f docker-compose.yml up --build -d
+  969  docker 
+  970  clear
+  971  docker ps
+  972  docker ps7e08cc64e23d
+  973  docker ps 7e08cc64e23d
+  974  docker logs 7e08cc64e23d
+  975  clear
+  976  docker logs 7e08cc64e23d
+  977  clear
+  978  docker-compose -f docker-compose.yml up --build -d
+  979  clear
+  980  docker-compose -f docker-compose.yml up --build -d
+  981  clear
+  982  docker ps
+  983  docker ps c780d2c9c204
+  984  docker logs c780d2c9c204
+  985  docker logs 7e08cc64e23d
+  986  clear
+  987  docker logs 7e08cc64e23d
+  988  clear
+  989  docker rm $(docker ps -a -q) -f
+  990  docker system prune -a
+  991  clear
+  992  cd nginx-node/node/
+  993  clear
+  994  docker build -t nodeapp:001 .
+  995  clear
+  996  docker images
+  997  docker images -rm
+  998  docker images --help
+  999  docker images
+ 1000  clear
+ 1001  cd ..
+ 1002  cd nginx/
+ 1003  clear
+ 1004  cd study/
+ 1005  code .
+ 1006  cd golang/
+ 1007  $(pwd)
+ 1008  ls
+ 1009  $(pwd)
+ 1010  clear
+ 1011  cd ..
+ 1012  cd nginx-node/
+ 1013  ls
+ 1014  docker-compose -f docker-compose.yml up --build -d
+ 1015  clear
+ 1016  docker ps
+ 1017  docker logs e76a8e3a3e95
+ 1018  docker ps e76a8e3a3e95
+ 1019  docker logs e76a8e3a3e95
+ 1020  docker logs e4789bcbe0b5
+ 1021  clear
+ 1022  docker-compose -f docker-compose.yml up --build -d
+ 1023  clear
+ 1024  docker-compose -f docker-compose.yml up --build -d
+ 1025  docker ps
+ 1026  clear
+ 1027  docker ps
+ 1028  docker logs e4789bcbe0b5
+ 1029  docker ps
+ 1030  docker logs c646a4f1cc6f
+ 1031  docker ps
+ 1032  docker logs 31b10691fb9f
+ 1033  clear
+ 1034  docker logs c646a4f1cc6f
+ 1035  docker logs 31b10691fb9f
+ 1036  clear
+ 1037  docker system prune -a
+ 1038  clear
+ 1039  cd study/
+ 1040  ll
+ 1041  mkdir docker
+ 1042  code .
+ 1043  rm mysql/
+ 1044  rm -d mysql/
+ 1045  rm -dr mysql/
+ 1046  rm -r mysql/
+ 1047  ls
+ 1048  rm -r mysql/
+ 1049  clear
+ 1050  sudo rm -r mysql/
+ 1051  ls
+ 1052  cd docker/
+ 1053  git clone https://github.com/FlavioHeartnet/dockernode.git
+ 1054  exit
+ 1055  clear
+ 1056  docker ps
+ 1057  docker stop c646a4f1cc6f
+ 1058  ls
+ 1059  de study/docker/
+ 1060  ls
+ 1061  cd study/docker/
+ 1062  clear
+ 1063  ls
+ 1064  cd dockernode/
+ 1065  docker-compose up -d --build
+ 1066  docker ps
+ 1067  cd..
+ 1068  cd ..
+ 1069  code .
+ 1070  clear
+ 1071  cd ..
+ 1072  cd docker/
+ 1073  cd dockernode/
+ 1074  docker-compose -f docker-compose.yml up --build -d
+ 1075  ls
+ 1076  docker-compose -f docker-compose.yaml up --build -d
+ 1077  cd ..
+ 1078  cd nginx-node/
+ 1079  clear
+ 1080  docker-compose -f docker-compose.yml up --build -d
+ 1081  clear
+ 1082  docker ps
+ 1083  clear
+ 1084  docker ps
+ 1085  clear
+ 1086  docker logs db
+ 1087  docker logs app
+ 1088  docker logs nginx 
+ 1089  clear
+ 1090  docker-compose -f docker-compose.yml up --build -d
+ 1091  docker logs nginx 
+ 1092  clear
+ 1093  docker stop nginx 
+ 1094  docker logs app
+ 1095  docker exec -it app bash
+ 1096  docker rm $(docker ps -a -q) -f
+ 1097  clear
+ 1098  docker-compose -f docker-compose.yml up --build -d
+ 1099  clear
+ 1100  docker logs app
+ 1101  docker logs db
+ 1102  clear
+ 1103  docker rm $(docker ps -a -q) -f
+ 1104  cd ..
+ 1105  cd node-nginx/
+ 1106  clear
+ 1107  cd node/
+ 1108  clear
+ 1109  docker build -t darkflame91/app:latest .
+ 1110  ls
+ 1111  docker build -t darkflame91/app:latest .
+ 1112  docker run -d --name node -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node
+ 1113  clear
+ 1114  docker run -d --name node -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node:16
+ 1115  docker exec -it app bash
+ 1116  docker exec -it node bash
+ 1117  celar
+ 1118  clear
+ 1119  docker system prune -a
+ 1120  clear
+ 1121  docker run -d --name app -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node:16
+ 1122  docker ps
+ 1123  docker ps -a
+ 1124  docker exec -it nginx bash
+ 1125  docker exec -it app bash
+ 1126  docker start app
+ 1127  docker exec -it app bash
+ 1128  docker ps
+ 1129  docker up app
+ 1130  docker
+ 1131  clea
+ 1132  clear
+ 1133  docker ps 
+ 1134  docker ps  -a
+ 1135  docker start 2675a2024543
+ 1136  docker ps  -a
+ 1137  docker ps 
+ 1138  clear
+ 1139  docker logs app
+ 1140  docker run -it -d --name app -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node:16
+ 1141  docker rm $(docker ps -a -q) -f
+ 1142  docker run -it -d --name app -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node:16
+ 1143  docker rm $(docker ps -a -q) -f
+ 1144  docker run -it -d --name app -p 3000:3000 -v /home/barbara/study/docker/node-nginx/node:/usr/src/app node:16 bash
+ 1145  docker ps
+ 1146  docker exec -it app bash
+ 1147  docker os
+ 1148  docker ps
+ 1149  clear
+ 1150  docker build -t app .
+ 1151  clear
+ 1152  docker build -t app .
+ 1153  docker exec -it app bash
+ 1154  clear
+ 1155  docker build -t app .
+ 1156  docker exec -it app bash
+ 1157  clear
+ 1158  docker build -t app .
+ 1159  docker exec -it app bash
+ 1160  ls
+ 1161  docker ps
+ 1162  clear
+ 1163  ls
+ 1164  docker ps
+ 1165  clear
+ 1166  docker rm $(docker ps -a -q) -f
+ 1167  clear
+ 1168  ls
+ 1169  ll
+ 1170  docker build -t darkflame91/app .
+ 1171  docker run -p 3000:3000 darkflame91/app
+ 1172  clear
+ 1173  docker rm $(docker ps -a -q) -f
+ 1174  docker build -t darkflame91/app .
+ 1175  docker run -p 3000:3000 darkflame91/app
+ 1176  docker ps
+ 1177  docker run -p 3000:3000 darkflame91/app
+ 1178  docker rm $(docker ps -a -q) -f
+ 1179  clear
+ 1180  docker ps
+ 1181  cd study/docker/node-nginx/
+ 1182  ls
+ 1183  cd node/
+ 1184  docker build -t darkflame91/app .
+ 1185  docker run -p 3000:3000 darkflame91/app
+ 1186  cd study/docker/node-nginx/
+ 1187  clear
+ 1188  docker rm $(docker ps -a -q) -f
+ 1189  clear
+ 1190  ls
+ 1191  docker-compose -f docker-compose.yml up --build -d
+ 1192  docker ps
+ 1193  ocker ps
+ 1194  docker ps
+ 1195  clear
+ 1196  docker-compose -f docker-compose.yml up --build -d
+ 1197  clear
+ 1198  docker ps
+ 1199  docker-compose -f docker-compose.yml up --build -d
+ 1200  clear
+ 1201  docker ps
+ 1202  docker logs db
+ 1203  docker logs app
+ 1204  docker exec -it db bash
+ 1205  clear
+ 1206  docker ps
+ 1207  docker stop db
+ 1208  docker ps
+ 1209  clear
+ 1210  docker stop app
+ 1211  clear
+ 1212  docker ps
+ 1213  leardocker compose ps
+ 1214  docker-compose -f docker-compose.yml up --build -d
+ 1215  clear
+ 1216  docker ps
+ 1217  docker logs db
+ 1218  docker logs app
+ 1219  clear
+ 1220  docker-compose -f docker-compose.yml up --build -d
+ 1221  docker logs app
+ 1222  docker logs db
+ 1223  clear
+ 1224  cd ..
+ 1225  cd nginx-node/
+ 1226  docker-compose -f docker-compose.yml up --build -d
+ 1227  docker system prune -a
+ 1228  clear
+ 1229  docker-compose -f docker-compose.yml up --build -d
+ 1230  docker rm $(docker ps -a -q) -f
+ 1231  clear
+ 1232  docker-compose -f docker-compose.yml up --build -d
+ 1233  docker logs nginx 
+ 1234  clear
+ 1235  docker rm $(docker ps -a -q) -f
+ 1236  clear
+ 1237  cd ..
+ 1238  cd node-nginx/
+ 1239  docker-compose -f docker-compose.yml up --build -d
+ 1240  docker rm $(docker ps -a -q) -f
+ 1241  clear
+ 1242  cd ..
+ 1243  cd nginx-node/
+ 1244  docker-compose -f docker-compose.yml up --build -d
+ 1245  clear
+ 1246  docker-compose -f docker-compose.yml up --build -d
+ 1247  docker logs app
+ 1248  docker exec -it app bash
+ 1249  docker ps
+ 1250  clear
+ 1251  docker-compose -f docker-compose.yml up --build -d
+ 1252  docker exec -it app bash
+ 1253  clear
+ 1254  docker-compose -f docker-compose.yml up --build -d
+ 1255  docker logs app
+ 1256  docker-compose -f docker-compose.yml up --build -d
+ 1257  docker ps
+ 1258  docker logs app
+ 1259  docker ps
+ 1260  docker-compose -f docker-compose.yml up --build -d
+ 1261  docker logs app
+ 1262  clear
+ 1263  docker-compose -f docker-compose.yml up --build -d
+ 1264  docker logs app
+ 1265  clear
+ 1266  docker-compose -f docker-compose.yml up --build -d
+ 1267  docker logs app
+ 1268  clear
+ 1269  docker ps
+ 1270  clear
+ 1271  docker-compose -f docker-compose.yml up --build -d
+ 1272  clear
+ 1273  docker ps
+ 1274  docker logs app
+ 1275  clear
+ 1276  docker-compose -f docker-compose.yml up --build -d
+ 1277  docker logs app
+ 1278  docker-compose -f docker-compose.yml up --build -d
+ 1279  clear
+ 1280  docker ps 
+ 1281  docker logs app
+ 1282  clear
+ 1283  docker-compose -f docker-compose.yml up --build -d
+ 1284  docker logs app
+ 1285  clear
+ 1286  docker-compose -f docker-compose.yml up --build -d
+ 1287  docker logs app 
+ 1288  docker-compose -f docker-compose.yml up --build -d
+ 1289  docker logs app
+ 1290  docker exec -it db bash
+ 1291  clear
+ 1292  docker-compose -f docker-compose.yml up --build -d
+ 1293  docker logs app
+ 1294  clear
+ 1295  docker-compose -f docker-compose.yml up --build -d
+ 1296  docker logs app
+ 1297  docker-compose -f docker-compose.yml up --build -d
+ 1298  docker logs app
+ 1299  docker-compose -f docker-compose.yml up --build -d
+ 1300  docker logs app
+ 1301  clear
+ 1302  docker-compose -f docker-compose.yml up --build -d
+ 1303  docker logs app
+ 1304  docker-compose -f docker-compose.yml up --build -d
+ 1305  docker logs app
+ 1306  clear
+ 1307  docker-compose -f docker-compose.yml up --build -d
+ 1308  clear
+ 1309  docker logs app
+ 1310  cd ..
+ 1311  code
+ 1312  cd node-nginx/
+ 1313  clear
+ 1314  docker-compose -f docker-compose.yml up --build -d
+ 1315  docker rm $(docker ps -a -q) -f
+ 1316  clear
+ 1317  docker-compose -f docker-compose.yml up --build -d
+ 1318  docker logs app
+ 1319  docker rm $(docker ps -a -q) -f
+ 1320  cd ..
+ 1321  cd nginx-node/
+ 1322  docker-compose -f docker-compose.yml up --build -d
+ 1323  docker logs db
+ 1324  docker logs app
+ 1325  docker-compose -f docker-compose.yml up --build -d
+ 1326  docker logs app
+ 1327  clear
+ 1328  docker ps
+ 1329  docker logs app
+ 1330  docker-compose -f docker-compose.yml up --build -d
+ 1331  clear
+ 1332  docker logs app
+ 1333  clear
+ 1334  docker-compose -f docker-compose.yml up --build -d
+ 1335  docker logs app
+ 1336  docker-compose -f docker-compose.yml up --build -d
+ 1337  clear
+ 1338  docker logs app
+ 1339  docker-compose -f docker-compose.yml up --build -d
+ 1340  clear
+ 1341  docker logs app
+ 1342  docker-compose -f docker-compose.yml up --build -d
+ 1343  clar
+ 1344  clear
+ 1345  docker logs app
+ 1346  docker-compose -f docker-compose.yml up --build -d
+ 1347  docker logs app
+ 1348  docker-compose -f docker-compose.yml up --build -d
+ 1349  clear
+ 1350  docker logs app
+ 1351  clear
+ 1352  docker-compose -f docker-compose.yml up --build -ddockerdoddddocddddddd
+ 1353  docker logs app
+ 1354  docker-compose -f docker-compose.yml up --build -d
+ 1355  docker logs app
+ 1356  docker-compose -f docker-compose.yml up --build -d
+ 1357  docker logs app
+ 1358  clear
+ 1359  docker logs app
+ 1360  docker-compose -f docker-compose.yml up --build -d
+ 1361  docker logs app
+ 1362  docker-compose -f docker-compose.yml up --build -d
+ 1363  clear
+ 1364  docker logs app
+ 1365  clear
+ 1366  docker-compose -f docker-compose.yml up --build -d
+ 1367  docker logs app
+ 1368  clear
+ 1369  docker-compose -f docker-compose.yml up --build -d
+ 1370  docker logs app
+ 1371  docker-compose -f docker-compose.yml up --build -d
+ 1372  docker logs app
+ 1373  clear
+ 1374  docker-compose -f docker-compose.yml up --build -d
+ 1375  docker logs app
+ 1376  docker-compose -f docker-compose.yml up --build -d
+ 1377  docker logs app
+ 1378  docker-compose -f docker-compose.yml up --build -d
+ 1379  docker logs app
+ 1380  docker-compose -f docker-compose.yml up --build -d
+ 1381  clear
+ 1382  docker logs app
+ 1383  docker-compose -f docker-compose.yml up --build -d
+ 1384  clear
+ 1385  docker logs app
+ 1386  clear
+ 1387  docker rm $(docker ps -a -q) -f
+ 1388  docker-compose -f docker-compose.yml up --build -d
+ 1389  docker-compose -f docker-compose.yml up --build -dclear
+ 1390  clear
+ 1391  docker-compose up -d
+ 1392  docker ps
+ 1393  docker rm $(docker ps -a -q) -f
+ 1394  docker-compose up -d
+ 1395  docker ps
+ 1396  docker-compose -f docker-compose.yml up --build -d
+ 1397  clear
+ 1398  docker rm $(docker ps -a -q) -f
+ 1399  docker-compose -f docker-compose.yml up --build -d
+ 1400  clear
+ 1401  docker logs app
+ 1402  docker logs db
+ 1403  docker rm $(docker ps -a -q) -f
+ 1404  docker-compose -f docker-compose.yml up --build -d
+ 1405  docker logs app
+ 1406  docker rm $(docker ps -a -q) -f
+ 1407  docker-compose up -d
+ 1408  docker ps
+ 1409  docker logs app
+ 1410  docker-compose up -d
+ 1411  docker logs app
+ 1412  docker-compose -f docke --build -d
+ 1413  docker-compose up --build -d
+ 1414  docker rm $(docker ps -a -q) -f
+ 1415  docker-compose up --build -d
+ 1416  docker logs app
+ 1417  docker-compose up --build -d
+ 1418  clear
+ 1419  docker logs app
+ 1420  docker-compose up --build -d
+ 1421  docker logs app
+ 1422  docker-compose up --build -d
+ 1423  docker logs app
+ 1424  docker-compose up --build -d
+ 1425  docker logs app
+ 1426  docker rm $(docker ps -a -q) -f
+ 1427  clear~
+ 1428  docker-compose up -d
+ 1429  docker-compose up --build -d
+ 1430  docker logs app
+ 1431  clear
+ 1432  cd node/
+ 1433  clear
+ 1434  ls
+ 1435  ll
+ 1436  docker build -t darkflame91/node .
+ 1437  docker pull darkflame91/node
+ 1438  docker system prune -a
+ 1439  clear
+ 1440  docker build -t darkflame91/node .
+ 1441  docker push darkflame91/node
+ 1442  docker ps
+ 1443  docker rm $(docker ps -a -q) -f
+ 1444  cler
+ 1445  clear
+ 1446  cd ..
+ 1447  docker-compose up --build -d
+ 1448  docker ps 
+ 1449  docker logs app
+ 1450  clear
+ 1451  docker rm $(docker ps -a -q) -f
+ 1452  cd nginx/
+ 1453  docker push darkflame91/nginx
+ 1454  docker build -t darkflame91/nginx .
+ 1455  docker push darkflame91/nginx
+ 1456  clear
+ 1457  docker ps
+ 1458  cd ..
+ 1459  docker compose ps
+ 1460  docker-compose up -d
+ 1461  docker ps
+ 1462  docker logs app
+ 1463  docker-compose up -d --build
+ 1464  docker logs app 
+ 1465  docker-compose up -d --build
+ 1466  docker logs app 
+ 1467  docker logs nginx 
+ 1468  docker-compose up -d --build
+ 1469  clear
+ 1470  docker-compose up -d 
+ 1471  docker rm $(docker ps -a -q) -f
+ 1472  docker ps
+ 1473  docker ps -a
+ 1474  docker image
+ 1475  docker images
+ 1476  docker system prune -a
+ 1477  docker images
+ 1478  clear
+ 1479  exit
+ 1480  docker exec -it db bash
+ 1481  exit
+ 1482  docker ps
+ 1483  docker ps -a
+ 1484  clear
+ 1485  cd study/docker/nginx-node/
+ 1486  clear
+ 1487  ls
+ 1488  ll
+ 1489  docker-compose up --build -d
+ 1490  docker ps
+ 1491  docker logs app
+ 1492  code .
+ 1493  clear
+ 1494  docker-compose up --build -d
+ 1495  docker logs app
+ 1496  docker ps
+ 1497  docker stop $(docker ps -a -q) -f
+ 1498  docker stop $(docker ps -a -q)
+ 1499  docker start 2b2bf1e4e691
+ 1500  docker logs app
+ 1501  docker start db
+ 1502  docker logs app
+ 1503  docker stop db
+ 1504  docker stop app
+ 1505  docker start db
+ 1506  docker logs db
+ 1507  docker start app
+ 1508  docker logs app
+ 1509  docker-compose up --build -d
+ 1510  cd node/
+ 1511  docker-compose up -d 
+ 1512  cd ..
+ 1513  celar
+ 1514  clear
+ 1515  docker exec -it app bash
+ 1516  clear
+ 1517  docker rm $(docker ps -a -q) -f
+ 1518  docker-compose up -d 
+ 1519  docker ps
+ 1520  docker logs app
+ 1521  docker-compose up -d 
+ 1522  docker-compose up -d --build
+ 1523  docker-compose -f docker-compose.ymal up --build -d
+ 1524  docker-compose -f docker-compose.yaml up --build -d
+ 1525  clear
+ 1526  docker rm $(docker ps -a -q) -f
+ 1527  docker-compose -f docker-compose.yaml up --build -d
+ 1528  docker logs app
+ 1529  docker-compose -f docker-compose.yaml up --build -d
+ 1530  docker logs app
+ 1531  docker-compose -f docker-compose.yaml up --build -d
+ 1532  docker logs app
+ 1533  clear
+ 1534  docker-compose -f docker-compose.yaml up --build -d
+ 1535  docker logs app
+ 1536  clear
+ 1537  docker-compose -f docker-compose.yaml up --build -d
+ 1538  docker logs app
+ 1539  docker rm $(docker ps -a -q) -f
+ 1540  docker-compose -f docker-compose.yaml up --build -d
+ 1541  docker ps
+ 1542  cd automacao/workspace/
+ 1543  ls
+ 1544  mkdir grafana
+ 1545  cd grafana/
+ 1546  ls
+ 1547  clear
+ 1548  docker run -d   -p 3000:3000   --name=grafana   -e "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource"   grafana/grafana:main-ubuntu
+ 1549  docker ps
+ 1550  docker run -d   -p 3030:3000   --name=grafana   -e "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource"   grafana/grafana:main-ubuntu
+ 1551  docker ps -a
+ 1552  docker rm 7639f7bba5de
+ 1553  clear
+ 1554  docker run -d   -p 3030:3000   --name=grafana   -e "GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource"   grafana/grafana:main-ubuntu
+ 1555  docker ps
+ 1556  docker logs grafana
+ 1557  clear
+ 1558  docker rm grafana
+ 1559  docker run -d   -p 3030:3000   --name=grafana  grafana/grafana:main-ubuntu
+ 1560  docker logs grafana
+ 1561  docker rm grafana
+ 1562  docker rm grafana -f
+ 1563  clear
+ 1564  docker run -d --name=grafana --restart always -p 3030:3000 -e "GF_SERVER_PROTOCOL=http" -e "GF_SERVER_HTTP_PORT=3030" -v /docker/grafana/data:/var/lib/grafana grafana/grafana
+ 1565  docker ps
+ 1566  docker logs grafana
+ 1567  clear
+ 1568  docker ps
+ 1569  docker stop grafana
+ 1570  docker run -d --name=grafana --restart always -p 3030:3000 -e "GF_SERVER_PROTOCOL=http" -e "GF_SERVER_HTTP_PORT=3030" -v /docker/grafana/data:/var/lib/grafana grafana/grafana
+ 1571  docker start grafana
+ 1572  docker logs grafana
+ 1573  docker rm grafana -f
+ 1574  sudo docker run -d --name=grafana --restart always -p 3030:3000 -e "GF_SERVER_PROTOCOL=http" -e "GF_SERVER_HTTP_PORT=3030" -v /docker/grafana/data:/var/lib/grafana grafana/grafana
+ 1575  clear
+ 1576  docker logs grafana
+ 1577  ls
+ 1578  touch docker-compose.yml
+ 1579  code .
+ 1580  clear
+ 1581  docker ps
+ 1582  docker rm -f grafana
+ 1583  docker run -d   -p 3030:3000   --name=grafana   grafana/grafana:main-ubuntu
+ 1584  docker logs grafana
+ 1585  docker exec -it grafana bash
+ 1586  docker rm -f grafana
+ 1587  cd automacao/
+ 1588  ll
+ 1589  cd workspace/
+ 1590  ll
+ 1591  cd docker-kibana/
+ 1592  ls
+ 1593  vim docker-compose.yml 
+ 1594  docker ps
+ 1595  docker rm $(docker ps -a -q) -f
+ 1596  clear
+ 1597  cd study/docker/
+ 1598  cd ..
+ 1599  code
+ 1600  ls
+ 1601  code .
+ 1602  ls
+ 1603  rmdir nginx-node/
+ 1604  rmdir nginx-node/ -r
+ 1605  rmdir nginx-node -r
+ 1606  clea
+ 1607  clear
+ 1608  rmdir -r nginx-node
+ 1609  rm -d nginx-node/
+ 1610  rm -rf nginx-node/
+ 1611  sudo rm -rf nginx-node/
+ 1612  ls
+ 1613  clear
+ 1614  cd docker/
+ 1615  code .
+ 1616  docker ps -a
+ 1617  clear
+ 1618  cd nginx-node/
+ 1619  docker-compose -f docker-compose.yaml up --build -d
+ 1620  clear
+ 1621  docker rm $(docker ps -a -q) -f
+ 1622  docker-compose -f docker-compose.yaml up --build -d
+ 1623  clear
+ 1624  docker-compose -f docker-compose.yaml up --build -d
+ 1625  docker ps
+ 1626  docker logs nginx 
+ 1627  docker ps
+ 1628  clear
+ 1629  docker rm $(docker ps -a -q) -f
+ 1630  ls
+ 1631  vim docker-compose.yaml 
+ 1632  clear
+ 1633  ocker container run -p 5001:5000 --name helloworld -d darkflame91/node
+ 1634  docker-compose up -d
+ 1635  clear
+ 1636  docker ps
+ 1637  docker logs db
+ 1638  docker stop db
+ 1639  clear
+ 1640  docker-compose up -d
+ 1641  docker ps
+ 1642  clear
+ 1643  docker logs app
+ 1644  docker exec -it db bash
+ 1645  docker ps
+ 1646  clear
+ 1647  docker rm $(docker ps -a -q) -f
+ 1648  docker-compose up -d
+ 1649  docker logs 
+ 1650  docker logs db
+ 1651  docker logs app
+ 1652  docker exec -it db bash
+ 1653  clear
+ 1654  docker ps
+ 1655  docker system prune -a
+ 1656  clear
+ 1657  docker-compose up -d
+ 1658  docker logs app
+ 1659  docker rm $(docker ps -a -q) -f
+ 1660  docker imagens
+ 1661  docker images
+ 1662  code .
+ 1663  dockre ps
+ 1664  docker ps
+ 1665  docker-compose up -d
+ 1666  docker logs app
+ 1667  docker inspect app
+ 1668  docker-compose up -d --build
+ 1669  docker logs app
+ 1670  clear
+ 1671  docker-compose up -d --build
+ 1672  docker logs app
+ 1673* 
+ 1674  clear
+ 1675  docker rm $(docker ps -a -q) -f
+ 1676  clear
+ 1677  docker-compose up -d
+ 1678  clear
+ 1679  docker ps
+ 1680  docker logs app
+ 1681  history > hist.txt
