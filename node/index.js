@@ -21,7 +21,7 @@ client.connect(function (err, client) {
  	    PRIMARY KEY ("id")
      );`)
 
-  client.query(`INSERT INTO users(name) VALUES ('Teste')`);
+  client.query(`INSERT INTO users(name) VALUES ('Barbara')`);
 
   client.query("select * from users", function (err, result) {
 
